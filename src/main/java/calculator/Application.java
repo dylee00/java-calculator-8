@@ -33,5 +33,8 @@ public class Application {
             result += Integer.parseInt(number);
         }
 
+        //계산한 값 반환
+        System.out.println("결과 : " + result);
+
     }
 }
