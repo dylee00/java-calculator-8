@@ -23,10 +23,14 @@ public class Application {
             input = input.substring(customDelimiterEndIndex + 2);
 
         }
+
+        //numbers 배열에 구분자를 기준으로 파싱한 문자 저장
         String[] numbers = input.split(defaultDelimiter);
 
+        //숫자의 합 계산
+        int result = 0;
         for (String number : numbers) {
-            System.out.println(Integer.parseInt(number));
+            result += Integer.parseInt(number);
         }
 
     }
